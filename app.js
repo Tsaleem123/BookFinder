@@ -1,6 +1,6 @@
 var altImg = "https://bulma.io/images/placeholders/128x128.png";
 document.getElementById("searchButton").onclick = function () {
-document.getElementById("test").innerHTML = "";
+document.getElementById("card").innerHTML = "";
 
 
 
@@ -13,7 +13,7 @@ input.addEventListener("keyup", (event) => {
     var myBook = document.getElementById("bookName").value;
     getBookByName(myBook);
 
-    document.getElementById("test").innerHTML = "";
+    document.getElementById("card").innerHTML = "";
   }
 });
 
@@ -110,5 +110,5 @@ function createCard(img,author,descrption,date,title) {
 </a>
 </div>
 `;
-  document.getElementById("test").innerHTML += content;
+  document.getElementById("card").innerHTML += content;
 }
